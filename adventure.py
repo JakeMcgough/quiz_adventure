@@ -202,6 +202,51 @@ def room6():
     health_bar()
     global health
 
+    print("as you go down the ladder you see a big empty room with an artifact in the middle")
+    print("however in this room there are traps")
+    print("you can go two ways around the different tiles")
+    print("a. like hopscotch formation")
+    print("b. like you're trying to miss out a tile walking on the path")
+    direction = input ("Direction ")
+    print(direction)
+
+    if direction == "a":
+        print("you nearly got there but fell into the trap")
+        print("the trap is a teleporter back to room5")
+        print("you are teleported back to room5")
+        time.sleep(5)
+        room5()
+
+    elif direction == "b":
+        print("You've gotten all the way to the artifact well done")
+        print("You can now pass through to the next room to progress out of the abandoned insane asylum")
+        print("(Yeah bet you didnt expect that with all the monsters)")
+        last_room()
+
+
+def last_room():
+
+    health_bar()
+    global health
+
+    print("You now have to smash the priceless artifact to rid this abandoned insane asylum")
+    print("If you dont the demons inside could leak out to the rest of the world and kill everyone")
+    print("a. smash it be a sane person and save the world")
+    print("b. be greedy, dont smash it and end all life on earth")
+    direction = input ("Direction ")
+    print(direction)
+
+    if direction == "a":
+        print("Well done you have won the game and saved the world :D")
+        quit
+
+    elif direction == "b":
+        print("You chose the greedy option")
+        print("You then try to get out the building but get stopped and killed by a monster you didnt kill")
+        print("For being greedy you are sent back to room1")
+        time.sleep(5)
+        room1()
+
     
 
     
